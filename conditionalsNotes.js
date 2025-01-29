@@ -72,3 +72,31 @@ if (height <= 200 && height >= 160) {
 } else{ 
     console.log ("No")
 }
+
+/* when using logical operators restate checked variable each time
+(x = 35 || 15) won't work
+(x = 35 || x = 15) will work
+javaScript uses "truthy and falsy" 
+truthy values treated the same
+following are truthy:
+true
+any not empty string including "false"
+any number other than 0
+arrays fxns and objects
+
+Falsy:
+false
+0 as a number or 0n as a big int
+an empty string
+null
+undefined
+NaN
+
+OR finds the first truthy value
+ex:
+
+let testVariable = null || 1 || false;
+console.log(testVariable)
+
+Puts out 1, or the 1st true value
+If everything is falsy, ouput is the last value in the || list.*/

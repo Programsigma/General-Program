@@ -10,7 +10,7 @@ a>b
 a==b
 a<=b
 a>=b
-*/
+
 
 //ex:
 let a = 5;
@@ -45,7 +45,7 @@ Not: ! -> flips true false value
 
 Clothing selector based on weather
 Two variables: temperature and precipitation
-*/ 
+
 let temperature = 85;
 let precipitation = true;
 
@@ -65,7 +65,7 @@ if (temperature > 75) {
 if (precipitation = true) {
     console.log("& Jacket")
 }
-console.log(19%3)*/
+console.log(19%3)
 let height = 800
 if (height <= 200 && height >= 160) {
     console.log ("Yes")
@@ -73,7 +73,7 @@ if (height <= 200 && height >= 160) {
     console.log ("No")
 }
 
-/* when using logical operators restate checked variable each time
+ when using logical operators restate checked variable each time
 (x = 35 || 15) won't work
 (x = 35 || x = 15) will work
 javaScript uses "truthy and falsy" 
@@ -99,4 +99,97 @@ let testVariable = null || 1 || false;
 console.log(testVariable)
 
 Puts out 1, or the 1st true value
-If everything is falsy, ouput is the last value in the || list.*/
+If everything is falsy, ouput is the last value in the || list.
+
+&& finds the first falsy value
+If no Falsy Values, returns the last value
+
+&& has higher precedence than ||
+
+Do not do this vv
+some people use && instead of if
+
+NOT takes a single argument and does the following
+It converts the value to true or false
+returns the opposite of the result
+
+*/
+
+// console.log(!NaN);
+// console.log(!1);
+
+// // because of this behavior, sometimes people will use !! to convert values to booleans
+
+// console.log(!!NaN);
+
+// //if you don't use the !!, you can do this same operation with Boolean():
+// console.log(Boolean(NaN));
+
+/* If we have a lot of possible test cases we want to check, it is frequently
+better to use a "switch" instead of an if, else if chain.  
+
+STRUCTURE:
+switch(expression) {
+    case x:
+        // code goes here
+        break; 
+    case y: 
+        // code goes here
+        break;
+    case z:
+        // code goes here
+        break;
+    default:
+        // code goes here
+}
+
+-The switch expression is evaluated
+-the value of the expression is compared with the values of each case.
+-If there is a match, the associated block of code is executed
+-If there is no match, the default case is executed.
+
+
+// There is something called the getDay() method.  This returns the weekday
+// as a number between 0 and 6.  We'll use a switch to convert this output to
+// an actual "day";
+
+let day;
+switch (new Date().getDay()){
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2: 
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4: 
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6: 
+        day = "Saturday";
+        break;
+    default:
+        console.log("Not a date");
+}
+
+console.log(day);
+
+alert( null || 2 && 3 || 4 );
+*/
+let age = 100;
+
+if (age >= 14 && age <= 90) {
+    console.log ("Congratulations you aren't a fetus or a corpse")
+}
+
+else if (!(age >= 14 && age <= 90)) {
+    console.log ("Booooo! You aren't a real person")
+}

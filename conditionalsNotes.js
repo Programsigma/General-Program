@@ -181,7 +181,6 @@ switch (new Date().getDay()){
 }
 
 console.log(day);
-
 alert( null || 2 && 3 || 4 );
 */
 let age = 100;
@@ -193,3 +192,8 @@ if (age >= 14 && age <= 90) {
 else if (!(age >= 14 && age <= 90)) {
     console.log ("Booooo! You aren't a real person")
 }
+
+//Ternary Operator allows you to write simple and concise if/else statements 
+
+// syntax for this is 
+//condition ? do this : else do this instead

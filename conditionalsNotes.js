@@ -197,3 +197,4 @@ else if (!(age >= 14 && age <= 90)) {
 
 // syntax for this is 
 //condition ? do this : else do this instead
+

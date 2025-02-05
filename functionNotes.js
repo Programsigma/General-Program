@@ -72,3 +72,8 @@ this.addEventListener("keydown", function (event) {
     console.log(` you pressed ${event.key}`);
 })
 
+// Another way is the arrow function
+
+this.addEventListener("keydown", (event) => {
+    console.log(` you pressed ${event.key}`);
+})

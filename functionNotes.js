@@ -27,24 +27,48 @@
 // An example to demonstrate scope
 
 let test1 = 1;
-let test2 = 5
+let test2 = 5;
 function add1(num) {
     test2 = test2 +1
     return num + 1;
 }
 
-console.log(add1(test1))
-console.log(test1)
-console.log (test2)
+console.log(add1(test1));
+console.log(test1);
+console.log (test2);
 
 // in summary a function can change the value of a global variable but 
 // only if that variable is used by name within the function.
 //  we can make optional variables
 function greetings(name = "Jacson Teed"){
-    console.log(`Hello, ${name}`)
+    console.log(`Hello, ${name}`);
 }
 
-greetings("Jackson Teed")
-greetings("Jack Blanton")
-greetings("Caleb 'Pookie' Smith")
-greetings()
+greetings("Jackson Teed");
+greetings("Jack Blanton");
+greetings("Caleb 'Pookie' Smith");
+greetings();
+
+// Anonymous Function. Anonymous functions frequently used if a 
+// function expects to take another function as a parameter.
+// Means that function does not have function name
+// ex. failed didn't call it
+
+// (function(){
+//     alert ("this is an anonymous function");
+// })
+
+// // ex. actual ex. of anonymous function.
+// function logKey(event) {
+//     console.log (`You pressed the "${event.key}"`)
+// }
+
+// this.addEventListener("keydown", logKey)
+
+// thats how we'd normally do this
+// we can use anonymous instead
+
+this.addEventListener("keydown", function (event) {
+    console.log(` you pressed ${event.key}`);
+})
+

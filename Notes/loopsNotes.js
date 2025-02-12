@@ -54,3 +54,8 @@ ex: */
 for (let j = 0; j < 5; j++){
    console.log(`j = ${j}`);
 }
+
+/* with another form of loop as a general rule, if your condition is going to be based on a #, you probably want to use >, <, <=, >=
+== != are likely to let you make an infinite loop
+
+youll also sometimes be off by one, js change between < or <=

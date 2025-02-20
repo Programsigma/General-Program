@@ -221,7 +221,7 @@
 // inverse of .pop is .push
 // .push adds an element to the end of the array
 
-let fruits = ("apple", "banana", "canteloupe")
+// let fruits = ("apple", "banana", "canteloupe")
 // console.log (fruits)
 
 
@@ -232,19 +232,44 @@ let fruits = ("apple", "banana", "canteloupe")
 // unshift - push but at the beginning
 
 //  push and unshift can add multiple elements at once
-fruits.push("orange", "peach")
-fruits.unshift("lemon", "pineapple")
-console.log(fruits)
+// fruits.push("orange", "peach")
+// fruits.unshift("lemon", "pineapple")
+// console.log(fruits)
 
 // Using Loops with arrays
 //  old style of printing all array values
 
-for(let i = 0; i< fruits.length; i++){
-   console.log(fruits[i])
-}
+// for(let i = 0; i< fruits.length; i++){
+//    console.log(fruits[i])
+// }
 
 // there is a different way to do this using a for . . .  of loop;
 
-for(let fruit of fruits) {
-   console.log(fruit)
-}
+// for(let fruit of fruits) {
+//    console.log(fruit)
+// }
+
+// things to note about arrays:
+/* array.length is returning the value of the last index +1, it's
+not actually counting the number of values in the array
+*/
+// let grades = ["A", "A", "B", ,"B", "A"]
+// console.log (grades)
+// console.log(grades.length)
+
+/* Multi Dimensional Arrays*/
+// A multi dimesional array is an array made out of more arrays
+
+// Array holding x,y coordinates of 5 points
+// 3,4 | 1,2 | 9,15 | 37,11 | 215,1
+let coordinates = [
+      [3,4],
+      [1,2],
+      [9,15],
+      [37,11],
+      [215,1],
+]
+
+console.log(coordinates[4][0])
+coordinates[4][0] = 21
+console.log(coordinates[4][0])

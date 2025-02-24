@@ -7,8 +7,7 @@
 //  -For loops
 
 //  While loops:
-//  whi
-// le(condition) {
+//  while(condition) {
 //     // code goes here
 //  }
 

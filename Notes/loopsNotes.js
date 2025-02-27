@@ -349,3 +349,19 @@ console.log (alpha)
 
  * for both of these if you omit the end value it goes to the end of the string
  .substr(start, length)
+*/
+ let testString = "The quick brown fox jumped over the lazy dog"
+ let string1 = testString.slice(-5, -1)
+ let string2 = testString.substring(-5,-1)
+ let strinhg3 = testString.substr(3,10)
+ console.log(string1)
+ console.log(string2)
+ console.log(strinhg3)
+
+ /* two final string string methods:
+ .toUpperCase() = string uppercase
+ .toLowerCase() = string lowercase
+*/
+let teststring2 = "ThE QUIck Brown FOX jumPEd"
+console.log(teststring2.toUpperCase())
+console.log(teststring2.toLowerCase())

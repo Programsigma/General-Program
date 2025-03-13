@@ -40,3 +40,29 @@ let musicGenres = ["jazz","blues", ]
 musicGenres.push("Rock and Roll")
 
 console.log(musicGenres)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{_+
+
+}

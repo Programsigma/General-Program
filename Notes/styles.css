@@ -1,0 +1,59 @@
+/*
+<!-- styles.css: -->
+<!-- This is comment  -->
+
+ <!-- Here's an exmple of a CSS rule: 
+
+div.bold-text {
+    font-weight: 700;
+}
+
+selector {
+    property: value;
+}
+
+<div> is an HTML element like <p> or <h#>
+
+<div> doesn't carry extra "rules" with it,
+like <p> and <h#> tags.  <div> is just an empty container
+
+"*" is the Universal Selector.  Example:
+*/
+
+* {
+    color: #016795;
+}
+
+div {
+    color: purple;
+}
+
+.sad {
+    font-size: xx-small;
+}
+
+
+.Kent {
+    color : blue
+}
+.Gloucester {
+    color: darkgreen
+
+}
+.King-Lear {
+    color: red
+}
+
+#annoyed{
+    font-size: x-large;
+}
+/*as a rule avoid id selectors, they can only be used once per page, and each element can
+only have one id. In general, you want to use class selectors because they can be repeated
+and you can assign more than one to a single element*/
+#topOfPage {
+    font-weight: 900;
+    font-style: oblique;
+}
+.royal {
+    font-style:italic
+}

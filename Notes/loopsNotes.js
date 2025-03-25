@@ -7,8 +7,7 @@
 //  -For loops
 
 //  While loops:
-//  whi
-// le(condition) {
+//  while(condition) {
 //     // code goes here
 //  }
 
@@ -262,14 +261,107 @@ not actually counting the number of values in the array
 
 // Array holding x,y coordinates of 5 points
 // 3,4 | 1,2 | 9,15 | 37,11 | 215,1
-let coordinates = [
-      [3,4],
-      [1,2],
-      [9,15],
-      [37,11],
-      [215,1],
-]
+// let coordinates = [
+//       [3,4],
+//       [1,2],
+//       [9,15],
+//       [37,11],
+//       [215,1],
+// ]
 
-console.log(coordinates[4][0])
-coordinates[4][0] = 21
-console.log(coordinates[4][0])
+// console.log(coordinates[4][0])
+// coordinates[4][0] = 21
+// console.log(coordinates[4][0])
+
+// // Methods are functions tied to a datatype
+
+// // ex: arr.pop is the pop method, it removes the last item of the array
+
+// // Learned 4 array methods: pop, push, shift, and unshift.
+// // arr.length not technically a method as it doesn't have the parentheses
+
+// // arr.at works like square bracket notation, but allow negative indicies
+// // ex: [a,b,c,d,e,f,g]=> arr.at(-2)=> "f"
+
+// // New Methods:
+
+// /* .join => lets us combine terms of an array into a string and specify the seperator
+// */
+
+// // Ex:
+
+// let arrayForString = ["A", "B", "C", "D"]
+// console.log(arrayForString.join()) // output single string connected by commas
+// console.log(arrayForString.join(" o.O ")) // outputs A o.O B o.O C o.O D
+
+// // more methods:
+// /* concat( ) => short for concatenate, combines arrays
+// */
+
+// // Mike Brady marries Carol Martin
+// let mikesSons = ["Greg", "Peter", "Bobby"];
+// let carolsDaughters = ["Marcia", "Jan", "Cindy"];
+// let bradyBunch = mikesSons.concat(carolsDaughters)
+// console.log(bradyBunch)
+
+// Final 2 methods:
+/*.splice and .slice
+splice = adds new items to array
+slice = removes a piece of an array
+
+splice ex:
+*/
+
+// let fruits = ["Apple", "Orange", "Banana", "Kiwi"]
+// // fruits.splice(2,0, "Mango", "Papaya")
+// // console.log(fruits)
+// // .splice(tagetindex, howMany items to be removed after the insertion , stuff to be added)
+
+// fruits.splice(2,0, "Mango", "Papaya")
+// console.log(fruits)
+// fruits.splice(3,1)
+// console.log (fruits)
+
+// // .slice returns a new array from a subsection or slice of an original array
+// let fruitILike = fruits.slice(1, 4)
+// console.log(fruitILike)
+
+/* Strings behave a lot like arrays and have some similar methods.
+ex: string.length = length of string
+*/
+
+let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+console.log(alpha.charAt(2))
+ console.log(alpha.at(20)) // .at is a recent addition, it allows negative indices, charAt does not
+ console.log( alpha[12])
+
+//  if you put in a value that doesn't exist, like alpha[28], it will give back undefined
+// charAt and at will both give out an empty string
+
+// ALSO: observe this example:
+alpha[1] = "Q"
+console.log (alpha)
+// Square brackets only let us read whats there, not change it
+
+/* 3 methods to remove part of a string
+.slice(start, end)
+ substring(start, end) // values less than zero treated as zero
+
+ * for both of these if you omit the end value it goes to the end of the string
+ .substr(start, length)
+*/
+ let testString = "The quick brown fox jumped over the lazy dog"
+ let string1 = testString.slice(-5, -1)
+ let string2 = testString.substring(-5,-1)
+ let strinhg3 = testString.substr(3,10)
+ console.log(string1)
+ console.log(string2)
+ console.log(strinhg3)
+
+ /* two final string string methods:
+ .toUpperCase() = string uppercase
+ .toLowerCase() = string lowercase
+*/
+let teststring2 = "ThE QUIck Brown FOX jumPEd"
+console.log(teststring2.toUpperCase())
+console.log(teststring2.toLowerCase())

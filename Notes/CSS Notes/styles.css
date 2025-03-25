@@ -20,13 +20,13 @@ like <p> and <h#> tags.  <div> is just an empty container
 "*" is the Universal Selector.  Example:
 */
 
-* {
+/* * {
     color: #016795;
-}
+} */
 
-div {
+/* div {
     color: purple;
-}
+} */
 
 .sad {
     font-size: xx-small;
@@ -34,7 +34,7 @@ div {
 
 
 .Kent {
-    color : blue
+    color :
 }
 .Gloucester {
     color: darkgreen
@@ -56,4 +56,27 @@ and you can assign more than one to a single element*/
 }
 .royal {
     font-style:italic
+}
+/* examples of working with multiple classes: we've already shown that we can give one element multiple classes
+
+EX
+
+If important, red and italicized
+If read, font small
+If unread, italic font style, background yellow
+*/
+.important,
+.unread{
+    font-style: italic
+}
+
+.important {
+    color: greenyellow;
+}
+.read {
+    font-size: small;
+}
+.unread {
+        background-color: yellow;
+    color
 }

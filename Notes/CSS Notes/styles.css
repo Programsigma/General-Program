@@ -27,14 +27,14 @@ like <p> and <h#> tags.  <div> is just an empty container
 /* div {
     color: purple;
 } */
-
+/* 
 .sad {
     font-size: xx-small;
 }
 
 
 .Kent {
-    color :
+    color :blue
 }
 .Gloucester {
     color: darkgreen
@@ -50,13 +50,13 @@ like <p> and <h#> tags.  <div> is just an empty container
 /*as a rule avoid id selectors, they can only be used once per page, and each element can
 only have one id. In general, you want to use class selectors because they can be repeated
 and you can assign more than one to a single element*/
-#topOfPage {
+/*#topOfPage {
     font-weight: 900;
     font-style: oblique;
 }
 .royal {
     font-style:italic
-}
+}*/
 /* examples of working with multiple classes: we've already shown that we can give one element multiple classes
 
 EX
@@ -65,6 +65,7 @@ If important, red and italicized
 If read, font small
 If unread, italic font style, background yellow
 */
+/*
 .important,
 .unread{
     font-style: italic
@@ -73,10 +74,19 @@ If unread, italic font style, background yellow
 .important {
     color: greenyellow;
 }
-.read {
-    font-size: small;
-}
-.unread {
-        background-color: yellow;
-    color
-}
+
+ */
+ .Pitchers{
+    color:red;
+    background-color: white;
+ }
+ .position-players{
+    color:white;
+    background-color: red;
+ }
+ .Outfielders{
+    font-family: monospace;
+ }
+ .position-players .Outfielders{
+    font-style:italic
+ }

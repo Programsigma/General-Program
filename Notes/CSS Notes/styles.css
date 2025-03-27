@@ -90,3 +90,26 @@ If unread, italic font style, background yellow
  .position-players .Outfielders{
     font-style:italic
  }
+ .Starters{
+    font-weight: 800;
+    text-align:center
+ }
+ .Relievers{
+    font-weight: 300;
+    text-align: right;
+ }
+ .infielders{
+    font-weight:400;
+    text-align: center;
+ }
+ /*change how lists are viewed*/
+ ul{
+    list-style: none;
+ }
+ 
+  li:before{
+    content:"<"
+  }
+  li:after{
+    content:">"
+  }

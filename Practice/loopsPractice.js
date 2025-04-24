@@ -61,8 +61,3 @@ console.log(musicGenres)
 
 
 
-
-
-{_+
-
-}

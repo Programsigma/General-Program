@@ -1,0 +1,19 @@
+let sum1 = 0
+let sum2 = 0
+let i = 0
+let a = 0
+
+function Sigma(num){
+    while(i<= num){
+        sum1 = sum1 + i ** 2
+        i++
+       
+    }
+    while(a<=num){
+        sum2 = sum2 + a
+        a++
+       
+    }
+    console.log(Math.abs(sum2 ** 2-sum1))
+    }
+   Sigma(100) 
